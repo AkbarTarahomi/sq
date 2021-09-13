@@ -1,5 +1,4 @@
 
-console.log('object');
 
 class App extends React.Component {
     render() { 

@@ -1,7 +1,5 @@
-
-console.log('object');
-
 class App extends React.Component {
+    console.log('object')
     render() { 
         return <div>App</div>;
     }

@@ -1,0 +1,15 @@
+<section id="<?php the_field('id_notification');?>" data-section-name="<?php the_field('id_notification');?>" class="scrollify notification">
+    <div>
+        <h3 class="section-title"><?php the_field('title_notification');?></h3>
+        <ul class="list">
+            <?php while ( have_rows( 'notification' ) ) {
+                the_row(); ?>
+                <li>
+                    <div class="box-glass">
+                        <?php the_sub_field('content'); ?>
+                    </div>
+                </li>
+            <?php } ?>
+        </ul>
+    </div>
+</section>
